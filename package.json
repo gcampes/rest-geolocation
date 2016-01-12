@@ -8,6 +8,7 @@
   },
   "devDependencies": {
     "body-parser": "^1.14.2",
+    "csvtojson": "^0.5.1",
     "geolib": "^2.0.18",
     "mongoose": "^4.3.5",
     "promise": "^7.1.1"

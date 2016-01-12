@@ -11,7 +11,8 @@ app.post('/', function(request, response){
   var Mongoose = require('mongoose');
   var Promise = require('promise');
 
-  var db = Mongoose.connect('mongodb://127.0.0.1:27017/geolocation');
+  Mongoose.disconnect();
+  var db = Mongoose.connect('mongodb://127.0.0.1:27017/rest-geolocation');
   Mongoose.connection.once('connected', function() {
     console.time('Time');
   	console.log("Database connected successfully")

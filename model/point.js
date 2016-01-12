@@ -3,7 +3,6 @@ var Schema = mongoose.Schema;
 
 var PointSchema = new Schema({
   name: String,
-  type: String,
   cd_estabelecimento: String,
 
   geo: {
