@@ -1,6 +1,6 @@
 var express = require('express');
 var app = express();
-var bodyParser = require('body-parser')
+var bodyParser = require('body-parser');
 
 app.use(bodyParser.json({limit: '50mb'}));
 
@@ -15,7 +15,7 @@ app.post('/', function(request, response){
   var db = Mongoose.connect('mongodb://127.0.0.1:27017/rest-geolocation');
   Mongoose.connection.once('connected', function() {
     console.time('Time');
-  	console.log("Database connected successfully")
+  	console.log("Database connected successfully");
   });
 
   var compare = function(a,b) {
